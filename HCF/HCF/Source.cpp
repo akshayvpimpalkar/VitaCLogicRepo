@@ -23,7 +23,7 @@ void main() {
 	cout << "HCF of " << num1 << " and " << num2 << " is " << c << endl;
 
 
-	//to check if both numbers are com-prime
+	//to check if both numbers are co-prime
 	if (c == 1) {
 		cout << num1 << " and " << num2 << " are co-prime numbers" << endl;
 	}
