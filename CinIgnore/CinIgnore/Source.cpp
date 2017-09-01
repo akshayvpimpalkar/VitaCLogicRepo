@@ -23,4 +23,8 @@ int main() {
 
 	std::cout << "Your initials are " << f1 << l1 << '\n';
 	return 0;
+
+
+	//cin.ignore(); default arguments:- streamsize _Count = 1, int_type _Metadelim = _Traits::eof()
+	
 }
