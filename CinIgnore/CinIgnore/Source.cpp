@@ -26,5 +26,16 @@ int main() {
 
 
 	//cin.ignore(); default arguments:- streamsize _Count = 1, int_type _Metadelim = _Traits::eof()
-	
+
+	/*
+	The following output is in the case we use only cin.ignore():-
+
+	Please, enter your first name followed by your surname : uduhah akshay
+		Your initials are ua
+		This is second name :
+	hdsjh whfsdhb
+		Your initials are sw            //look here carefully
+		Press any key to continue . . .
+
+	*/
 }
