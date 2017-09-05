@@ -60,13 +60,47 @@ void selectionSort(int b[], int n) {
 	}
 	cout << endl;
 }
+
+void optimizedSelectionSort(int a[], int n) {
+
+	cout << "Array before optimized selection sort: " << endl;
+	for (int i = 0; i < n; i++) {
+		cout << a[i] << " ";
+	}
+	int temp, i, j, min;
+	for (i = 0; i < n - 1; i++) {
+		min = i;
+		for (j = i + 1; j < n; j++) {
+			if (a[min] > a[j])
+				min = j;
+		}
+		if (min != i) {
+			temp = a[min];
+			a[min] = a[i];
+			a[i] = temp;
+		}
+	}
+
+	cout << "\nArray after optimized selection sort: " << endl;
+	for (int i = 0; i < n; i++) {
+		cout << a[i] << " ";
+	}
+
+	cout << endl;
+}
+
+
 int main() {
 	int arr[10] = { 1,26,74,53,2,35,13,25,68,24 };
 	int arr1[5] = { 87, 3, 45, 17, 8 };
+	int arr2[7] = { 34, 96, 13, 4, 70, 33, 59 };
 
 	bubbleSort(arr, 10);
 	cout << endl;
 	selectionSort(arr1, 5);
 
+	cout << endl;
+	optimizedSelectionSort(arr2, 7);
+	cout << endl;
 	return 0;
 }
