@@ -89,11 +89,39 @@ void optimizedSelectionSort(int a[], int n) {
 	cout << endl;
 }
 
+void insertionSort(int arr[], int n) {
+	cout << "Array before insertion sort: " << endl;
+	for (int i = 0; i < n; i++) {
+		cout << arr[i] << " ";
+	}
+	int i, j, k, temp;
+	for (i = 1; i < n; i++) {
+		for (j = 0; j < i; j++) {
+			if (arr[j] > arr[i]) {
+				temp = arr[j];
+				arr[j] = arr[i];
+				for (k = i; k > j; k--) {
+					arr[k] = arr[k - 1];
+				}
+				arr[k + 1] = temp;
+			}
+		}
+	}
+
+	cout << "\nArray after insertion sort: " << endl;
+	for (int i = 0; i < n; i++) {
+		cout << arr[i] << " ";
+	}
+
+	cout << endl;
+}
+
 
 int main() {
 	int arr[10] = { 1,26,74,53,2,35,13,25,68,24 };
 	int arr1[5] = { 87, 3, 45, 17, 8 };
 	int arr2[7] = { 34, 96, 13, 4, 70, 33, 59 };
+	int arr3[8] = { 5, 8, 9, 2, 6, 4, 3, 1 };
 
 	bubbleSort(arr, 10);
 	cout << endl;
@@ -101,6 +129,9 @@ int main() {
 
 	cout << endl;
 	optimizedSelectionSort(arr2, 7);
+	cout << endl;
+
+	insertionSort(arr3, 8);
 	cout << endl;
 	return 0;
 }
