@@ -39,15 +39,17 @@ int main()
 			cout << "*";
 		}
 		cout << endl;
+
+	//line 2nd to 2nd last printing
 	for (int l = 0; l < wi; l++) {
 
-		//line 2nd to 2nd last printing
+		//character by character printing
 		for (int j = 0; j < maxWordSize + 2; j++) {
 			if (j == 0) {
 				cout << "*";
 				j++;
 			}
-			//for peinting spaces
+			//for printing spaces
 			for (int s = 0; s < (maxWordSize - strlen(wordArray[l])); s++) {
 				cout << " ";
 				j++;
