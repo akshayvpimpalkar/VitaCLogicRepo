@@ -8,11 +8,13 @@ using namespace std;
 
 int main()
 {
-
+	
 	int rows, c;
 	cout << "Enter number of rows: ";
 	cin >> rows;
 
+
+	//Normal star pyramid
 	c = 2 * rows - 1;
 	for (int i = 0; i < rows; i++) {
 		for (int j = 0; j < c; j++) {
@@ -27,6 +29,9 @@ int main()
 	}
 
 	cout << "------------------------------------" << endl;
+
+
+	//star pyramid with alternate star and space printing
 
 	int k; //to toggle k to print alternate "*" with " " in each row
 	for (int i = 0; i < rows; i++) {
