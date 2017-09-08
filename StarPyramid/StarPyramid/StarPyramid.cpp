@@ -48,6 +48,22 @@ int main()
 		}
 		cout << endl;
 	}
+
+	cout << "------------------------------------" << endl;
+
+
+	//for printing compliment of the first pattern above
+	for (int i = 0; i < rows; i++) {
+		for (int j = 0; j < c; j++) {
+			if (j <= (rows - 1 - i) || j >= (rows - 1 + i)) {
+				cout << "*";
+			}
+			else {
+				cout << " ";
+			}
+		}
+		cout << endl;
+	}
     return 0;
 }
 
