@@ -47,7 +47,7 @@ int main()
 	cout << "--------------------------------------------" << endl;
 
 	/*
-	The below is same but just using indeces for i,j from 1 to number of rows 
+	The below is same but just using indices for i,j from 1 to number of rows 
 	and columns respectively
 	*/
 	k = 0; //we have to reset k because we have changed it's value in above pattern
